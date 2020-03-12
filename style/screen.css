@@ -1,26 +1,4 @@
 /*------------------------------------*\
-  #FONTS
-\*------------------------------------*/
-@font-face {
-  font-family: 'Inter UI';
-  font-weight: 400;
-  src: url('../fonts/Inter-UI-Regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter UI';
-  font-weight: 700;
-  src: url('../fonts/Inter-UI-Bold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter UI';
-  font-weight: 700;
-  font-style: italic;
-  src: url('../fonts/Inter-UI-Medium.woff2') format('woffw');
-}
-
-/*------------------------------------*\
   #GENERIC
 \*------------------------------------*/
 
@@ -34,6 +12,7 @@ html {
   font-size: 16px;
   line-height: 1.5;
   font-family: Helvetica, arial, sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #111;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -440,6 +419,76 @@ a:focus {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+/*
+    Component: header
+    ---
+    Main header of the website
+*/
+
+.c-header__nav {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .c-header__nav {
+    display: block;
+  }
+}
+
+/*
+    Component: Nav
+    ---
+    Main navigation of the site
+*/
+
+.c-nav {
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.c-nav__link {
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  padding: 8px 0;
+}
+
+.c-nav__link,
+.c-nav__link:visited,
+.c-nav__link:active {
+  color: black;
+}
+
+.c-nav__link:hover,
+.c-nav__link:focus {
+  /* color: #dbedff;
+  text-shadow: 0 0 8px #8ec7ff; */
+}
+
+@media (min-width: 992px) {
+  .c-nav__list {
+    display: flex;
+    align-items: center;
+    /* margin-left: -16px;
+      margin-right: -16px; */
+  }
+
+  .c-nav__link {
+    padding: 12px 16px;
+  }
+
+  .c-nav__item--cta {
+    margin-left: 16px;
+  }
+}
 
 /*------------------------------------*\
   #UTILITIES
