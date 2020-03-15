@@ -175,6 +175,10 @@ a:focus {
   flex-direction: column;
 }
 
+.o-row__intro {
+  background-color: #f8fbff;
+}
+
 /* size modifiers */
 
 .o-row--lg {
@@ -424,20 +428,30 @@ a:focus {
     ---
     Main header of the website
 */
+.c-logo {
+}
 
 .c-header__nav {
   display: none;
 }
 
 @media (min-width: 992px) {
+  .c-logo {
+    /* z-index: +1; */
+    position: relative;
+    z-index: 1;
+  }
+
   .c-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
   }
 
   .c-header__nav {
+    position: relative;
     display: block;
+    z-index: -1;
   }
 }
 
@@ -448,10 +462,15 @@ a:focus {
 */
 
 .c-nav {
-  font-size: 13px;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 24px;
+  /* line-height: 29px; */
+  /* text-transform: uppercase; */
+  font-weight: 300;
+
+  /* shadow */
+  /* -moz-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc; */
 }
 
 .c-nav__link {
