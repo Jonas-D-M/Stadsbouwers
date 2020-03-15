@@ -11,9 +11,8 @@
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: Helvetica, arial, sans-serif;
-  font-family: 'Lato', sans-serif;
-  color: #111;
+  font-family: 'Lato', Helvetica, arial, sans-serif;
+  color: black;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -78,9 +77,9 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 40px;
-  margin: 0 0 24px;
+  margin: 0 0 8px;
 }
 
 h3 {
@@ -423,6 +422,83 @@ a:focus {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+
+/*
+    Component: card
+    ---
+    styling for cards
+*/
+.c-diensten-header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.c-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.c-card {
+  max-width: 400px;
+  /* max-height: 440px; */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 0 0 16px;
+}
+.c-card__img {
+  max-height: 216px;
+}
+
+.c-card__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.c-card__text {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.c-card__text,
+.c-card__title {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/*
+    Component: intro
+    ---
+    styling for intro
+*/
+.c-intro__header1 {
+  font-size: 32px;
+  color: black;
+  font-weight: 700;
+  line-height: 39px;
+}
+.c-intro__text {
+  size: 24px;
+  line-height: 29px;
+}
+
+/*
+    Component: button
+    ---
+    styling for buttons
+*/
+.c-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #000000;
+  color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 8px 16px;
+}
+
 /*
     Component: header
     ---
@@ -439,19 +515,19 @@ a:focus {
   .c-logo {
     /* z-index: +1; */
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
   }
 
   .c-header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
 
   .c-header__nav {
     position: relative;
     display: block;
-    z-index: -1;
+    /* z-index: -1; */
   }
 }
 
