@@ -428,6 +428,11 @@ a:focus {
     ---
     styling for cards
 */
+
+.underline {
+  border-bottom: ;
+}
+
 .c-diensten-header {
   text-align: center;
   font-size: 32px;
@@ -437,7 +442,7 @@ a:focus {
 .c-card-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .c-card {
