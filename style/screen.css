@@ -178,6 +178,10 @@ a:focus {
   background-color: #f8fbff;
 }
 
+.o-row__footer {
+  background-color: black;
+}
+
 /* size modifiers */
 
 .o-row--lg {
@@ -485,6 +489,18 @@ a:focus {
 }
 
 /*
+    Component: info
+    ---
+    styling for info
+*/
+.c-footer-container {
+  color: white;
+}
+.c-info {
+  max-width: 294px;
+}
+
+/*
     Component: nieuwsbrief
     ---
     styling for nieuwsbrief
@@ -494,13 +510,12 @@ a:focus {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 .c-nieuwsbrief__container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .c-nieuwsbrief__content {
-  padding-left: 200px;
-  padding-right: 200px;
+  text-align: center;
 }
 .c-nieuwsbrief__input {
   margin-bottom: 16px;
