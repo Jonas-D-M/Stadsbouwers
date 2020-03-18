@@ -429,27 +429,21 @@ a:focus {
     styling for cards
 */
 
-.underline {
-  border-bottom: ;
-}
-
 .c-diensten-header {
+  text-decoration: underline;
   text-align: center;
   font-size: 32px;
   font-weight: 700;
 }
 
 .c-card-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .c-card {
   max-width: 400px;
-  /* max-height: 440px; */
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   padding: 0 0 16px;
+  margin: 16px;
 }
 .c-card__img {
   max-height: 216px;
@@ -462,6 +456,7 @@ a:focus {
 }
 
 .c-card__text {
+  text-overflow: ellipsis;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
@@ -502,6 +497,10 @@ a:focus {
   color: white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   padding: 8px 16px;
+}
+
+.c-button:hover {
+  cursor: pointer;
 }
 
 /*
@@ -555,6 +554,7 @@ a:focus {
 }
 
 .c-nav__link {
+  text-align: center;
   text-decoration: none;
   font-weight: 600;
   display: block;
