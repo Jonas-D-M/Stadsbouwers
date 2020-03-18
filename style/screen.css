@@ -71,19 +71,19 @@ h3 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 48px;
   margin: 0 0 24px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 40px;
   margin: 0 0 8px;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 1.625rem;
   line-height: 32px;
   margin: 0 0 24px;
 }
@@ -91,7 +91,7 @@ h3 {
 h4,
 h5,
 h6 {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px;
   margin: 0 0 24px;
 }
@@ -432,7 +432,7 @@ a:focus {
 .c-diensten-header {
   text-decoration: underline;
   text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -452,13 +452,13 @@ a:focus {
 .c-card__title {
   text-align: center;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .c-card__text {
   text-overflow: ellipsis;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -474,7 +474,7 @@ a:focus {
     styling for intro
 */
 .c-intro__header1 {
-  font-size: 32px;
+  font-size: 2rem;
   color: black;
   font-weight: 700;
   line-height: 39px;
@@ -484,6 +484,35 @@ a:focus {
   line-height: 29px;
 }
 
+/*
+    Component: nieuwsbrief
+    ---
+    styling for nieuwsbrief
+*/
+.c-nieuwsbrief {
+  max-width: 100%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.c-nieuwsbrief__container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.c-nieuwsbrief__content {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.c-nieuwsbrief__input {
+  margin-bottom: 16px;
+}
+.c-nieuwsbrief__header {
+  text-align: center;
+}
+
+.c-input-fields {
+  display: flex;
+  flex-direction: column;
+}
 /*
     Component: button
     ---
@@ -542,7 +571,7 @@ a:focus {
 */
 
 .c-nav {
-  font-size: 24px;
+  font-size: 1.5rem;
   /* line-height: 29px; */
   /* text-transform: uppercase; */
   font-weight: 300;
