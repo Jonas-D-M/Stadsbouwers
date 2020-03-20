@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/screen.css" />
+    <script src="script/mobilenav.js"></script>
     <title>Stadsbouwers</title>
   </head>
   <body>
@@ -16,7 +17,6 @@
             <h1 class="c-logo">
               <img src="img/Logo.png" alt="Stadsbouwers" />
             </h1>
-            <div class="triangle-bottomright"></div>
           </div>
           <div class="c-header__nav">
             <nav class="c-nav">
@@ -28,6 +28,13 @@
               </ul>
             </nav>
           </div>
+        </div>
+        <div class="c-header__mobile-nav-trigger home ">
+          <button class="o-button-reset c-nav-trigger js-toggle-nav">
+            <svg class="c-nav-trigger__svg" xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12">
+              <path d="M3,18H21V16H3Zm0-5H21V11H3ZM3,6V8H21V6Z" transform="translate(-3 -6)" fill="#000" />
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -150,5 +157,29 @@
         </div>
       </div>
     </footer>
+
+    <!-- mobile nav -->
+    <aside class="c-mobile-nav">
+      <div class="c-mobile-nav__bg"></div>
+      <div class="c-mobile-nav__body">
+        <div class="c-mobile-nav__header">
+          <button class="o-button-reset c-nav-trigger js-toggle-nav">
+            <svg class="c-nav-trigger__svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+              <path d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z" transform="translate(-5 -5)" fill="#000" />
+            </svg>
+          </button>
+        </div>
+        <div class="c-mobile-nav__nav c-mobile-nav__nav--main">
+          <nav class="c-nav">
+            <ul class="o-list c-nav__list">
+              <li class="c-nav__item"><a href="#" class="c-nav__link">Vastgoedontwikkeling</a></li>
+              <li class="c-nav__item"><a href="#" class="c-nav__link">Renovatie & Nieuwbouw</a></li>
+              <li class="c-nav__item"><a href="#" class="c-nav__link">Impactinvesteren</a></li>
+              <li class="c-nav__item"><a href="#" class="c-nav__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
   </body>
 </html>
