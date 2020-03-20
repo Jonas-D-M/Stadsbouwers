@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,21 +9,22 @@
     <title>Stadsbouwers</title>
   </head>
   <body>
-    <header class="o-row">
-      <div class="o-container">
+    <header>
+      <div class="o-container u-max-width-none">
         <div class="c-header">
           <div class="c-header__logo">
             <h1 class="c-logo">
               <img src="img/Logo.png" alt="Stadsbouwers" />
             </h1>
+            <div class="triangle-bottomright"></div>
           </div>
           <div class="c-header__nav">
             <nav class="c-nav">
               <ul class="o-list c-nav__list">
-                <li class="c-nav__item"><a href="vastgoed.html" class="c-nav__link">Vastgoedontwikkeling</a></li>
-                <li class="c-nav__item"><a href="renovatie.html" class="c-nav__link">Renovatie & Nieuwbouw</a></li>
-                <li class="c-nav__item"><a href="investeren.html" class="c-nav__link">Impactinvesteren</a></li>
-                <li class="c-nav__item"><a href="contact.html" class="c-nav__link">Contact</a></li>
+                <li class="c-nav__item"><a href="#" class="c-nav__link">Vastgoedontwikkeling</a></li>
+                <li class="c-nav__item"><a href="#" class="c-nav__link">Renovatie & Nieuwbouw</a></li>
+                <li class="c-nav__item"><a href="#" class="c-nav__link">Impactinvesteren</a></li>
+                <li class="c-nav__item"><a href="#" class="c-nav__link">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -48,7 +49,8 @@
         </div>
       </div>
     </section>
-    <section class="o-row o-row--lg o-row__diensten o-container">
+
+    <section class="o-row o-row--lg o-row__diensten">
       <div class="o-container">
         <div class="c-diensten-header">
           <h1>
@@ -56,7 +58,7 @@
           </h1>
           <div class="c-underline"></div>
         </div>
-        <div class="o-layout o-layout--justify-space-evenly c-card-container">
+        <div class="o-layout o-layout--justify-space-between c-card-container">
           <div class="c-card o-layout__item u-1-of-2-bp2 u-1-of-3-bp3">
             <div class="c-card__img">
               <img src="img/vastgoedontwikkeling.png" alt="Vastgoedontwikkeling" />
@@ -111,22 +113,28 @@
         </div>
       </div>
     </section>
-    <section class="o-row o-row--lg o-row__diensten o-container">
-      <div class="c-nieuwsbrief ">
-        <div class="c-nieuwsbrief__container o-layout o-layout--justify-center">
-          <h1 class="o-layout__item c-nieuwsbrief__header ">Onze nieuwsbrief</h1>
-          <p class="c-nieuwsbrief__content o-layout__item">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quod reprehenderit, consequuntur, id quo inventore quos error vel hic labore ipsam aliquid perspiciatis facere laudantium
-            autem voluptatum eaque,
-          </p>
-          <div class="c-input-fields">
-            <input class="c-nieuwsbrief__input" type="email" name="email" id="emailID" placeholder="E-mail" />
-            <button class=" o-button-reset c-button">Ontvang de nieuwsbrief</button>
+
+    <!-- diensten cards -->
+    <section class="o-row o-row--lg">
+      <div class="o-container">
+        <div class="c-nieuwsbrief ">
+          <div class="c-nieuwsbrief__container o-layout o-layout--justify-center">
+            <h1 class="o-layout__item c-nieuwsbrief__header ">Onze nieuwsbrief</h1>
+            <p class="c-nieuwsbrief__content o-layout__item">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quod reprehenderit, consequuntur, id quo inventore quos error vel hic labore ipsam aliquid perspiciatis facere laudantium
+              autem voluptatum eaque,
+            </p>
+            <div class="c-input-fields">
+              <input class="c-nieuwsbrief__input" type="email" name="email" id="emailID" placeholder="E-mail" />
+              <button class=" o-button-reset c-button">Ontvang de nieuwsbrief</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="o-row o-row--lg o-row__footer ">
+
+    <!-- footer content -->
+    <footer class="o-row o-row--lg o-row__footer ">
       <div class="o-layout o-layout--justify-space-evenly c-footer-container">
         <div class="c-info o-layout__item u-1-of-2-bp1">
           <h2 class="c-info__subheader">
@@ -141,6 +149,6 @@
           <p>Klein tekst bedrijf hier Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium tristique nisi, pulvinar blandit diam aliquam eget. Morbi ac mauris a</p>
         </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
