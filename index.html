@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/screen.css" />
-    <script src="script/mobilenav.js"></script>
+    <script src="script/app.js"></script>
     <title>Stadsbouwers</title>
   </head>
   <body>
@@ -27,7 +27,9 @@
             </nav>
           </div>
           <div class="c-header__logo">
-            <img class="c-logo" src="img/Logo.png" alt="Stadsbouwers" />
+            <a href="#">
+              <img class="c-logo" src="img/Logo.png" alt="Stadsbouwers" />
+            </a>
           </div>
           <div class="c-header__mobile-nav-trigger">
             <button class="o-button-reset c-nav-trigger js-toggle-nav">
@@ -42,17 +44,18 @@
 
     <!-- Stadsbouwers dat is... -->
     <section class="o-row__intro">
-      <div class="o-container o-layout o-layout--row-reverse">
-        <div class="o-layout__item u-1-of-2-bp2">
+      <div class="o-layout o-layout--row-reverse">
+        <div class="o-layout__item u-1-of-2-bp4">
           <img class="c-intro__image" src="img/section.jpeg" alt="Mensen die verhuizen" />
         </div>
-        <div class="c-intro o-layout__item u-1-of-2-bp2 o-row o-row--lg">
+        <div class="c-intro o-layout__item u-1-of-2-bp4 o-row o-row--lg o-layout--justify-center">
           <h1 class="c-intro__header1">Stadsbouwers.be dat is...</h1>
 
           <div class="c-intro__text u-mb-xl">
-            <p>... meer dan alleen een aannemer of projectontwikkelaar!</p>
-            <p>Wij bekijken <b>vastgoed</b> vanuit een <b>participatieve impactvisie</b> en koppelen dit aan de kracht en de voordelen van een <b>ondernemende community</b>.</p>
-            <p>Stadsbouwers genieten van <b>specifieke voordelen</b> als bouwer, verbouwer, eigenaar of als bewoner van vastgoed.</p>
+            <p>
+              ... meer dan alleen een aannemer of projectontwikkelaar! Wij bekijken <b>vastgoed</b> vanuit een <b>participatieve impactvisie</b> en koppelen dit aan de kracht en de voordelen van een
+              <b>ondernemende community</b>. Stadsbouwers genieten van <b>specifieke voordelen</b> als bouwer, verbouwer, eigenaar of als bewoner van vastgoed.
+            </p>
           </div>
           <div class="o-layout o-layout--justify-center">
             <button class="o-layout__item o-button-reset c-button u-mb-lg">Ontdek ons impactverhaal</button>
@@ -70,7 +73,7 @@
           </h1>
           <div class="c-underline"></div>
         </div>
-        <div class="o-layout o-layout--justify-space-between c-card-container">
+        <div class="o-layout o-layout--justify-space-evenly o-layout--justify-center c-card-container">
           <div class="c-card o-layout__item u-1-of-3-bp3">
             <div class="c-card__img">
               <img src="img/vastgoedontwikkeling.png" alt="Vastgoedontwikkeling" />
@@ -93,7 +96,7 @@
               <img src="img/vastgoedontwikkeling.png" alt="Vastgoedontwikkeling" />
             </div>
             <div class="c-card__title u-mb-clear u-mb-sm">
-              <h2>Vastgoedontwikkeling</h2>
+              <h2>Renovatie & nieuwbouw</h2>
             </div>
             <div class="c-card__text">
               <p>
@@ -110,7 +113,7 @@
               <img src="img/vastgoedontwikkeling.png" alt="Vastgoedontwikkeling" />
             </div>
             <div class="c-card__title u-mb-sm">
-              <h2>Vastgoedontwikkeling</h2>
+              <h2>Impactinvesteren</h2>
             </div>
             <div class="c-card__text">
               <p>
@@ -152,16 +155,18 @@
         </div>
         <div class="o-layout__item u-1-of-3-bp4 ">
           <div class="o-layout o-layout--justify-center">
-            <h2>Zit er een StadsBouwer in jou?</h2>
+            <div class="c-textblock">
+              <h2>Zit er een StadsBouwer in jou?</h2>
+            </div>
             <div class="c-textblock">
               <h3 class="c-textblock__header">Zoek je</h3>
               <p class="c-textblock_content">Een aannemer voor je bouw-of verbouwprojecten, of meer een betrouwbaar vakeman voor klusjes in jouw woning?</p>
             </div>
-            <div class="c-textblock o-layout__item u-1-of-2">
+            <div class="c-textblock o-layout__item ">
               <h3 class="c-textblock__header">Wil je</h3>
               <p class="c-textblock_content">Een aannemer voor je bouw-of verbouwprojecten, of meer een betrouwbaar vakeman voor klusjes in jouw woning?</p>
             </div>
-            <div class="c-textblock o-layout__item u-1-of-2">
+            <div class="c-textblock o-layout__item  ">
               <h3 class="c-textblock__header">Heb je</h3>
               <p class="c-textblock_content">Een aannemer voor je bouw-of verbouwprojecten, of meer een betrouwbaar vakeman voor klusjes in jouw woning?</p>
             </div>

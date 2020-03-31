@@ -103,7 +103,7 @@ dl,
 table,
 address,
 figure {
-  margin: 0 0 24px;
+  margin: 0 0 0px;
 }
 
 ul,
@@ -537,16 +537,6 @@ a:focus {
   line-height: 29px;
 }
 
-.c-intro {
-}
-
-@media (min-width: 1200px) {
-  .c-intro__image {
-    -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
-  }
-}
-
 /*
     Component: info
     ---
@@ -600,6 +590,7 @@ a:focus {
   color: white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   padding: 8px 16px;
+  margin-top: 1rem;
 }
 
 .c-button:hover {
@@ -632,7 +623,6 @@ a:focus {
   justify-content: flex-end;
   align-items: center;
   padding: 24px;
-  box-shadow: 0px 3px 6px #00000029;
 }
 
 .c-logo {
@@ -647,11 +637,12 @@ a:focus {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: #fff;
   -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  /* filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5)); */
+  transition: opacity 0.25s;
 }
 
 @media (min-width: 992px) {
@@ -671,9 +662,21 @@ a:focus {
   .c-header__nav {
     position: relative;
     display: block;
-    box-shadow: 0px 3px 6px #00000029;
     z-index: 1;
     width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-intro__image {
+    -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .c-logo {
+    height: 40px;
+    margin-top: 48px;
+    margin-right: 64px;
+    margin-left: 48px;
   }
 }
 
@@ -716,9 +719,6 @@ a:focus {
   pointer-events: auto;
 }
 
-
-
-
 .c-mobile-nav__body {
   position: relative;
   height: 100vh;
@@ -739,9 +739,10 @@ a:focus {
 .c-nav__link {
   text-align: center;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   display: block;
   padding: 8px 0;
+  font-size: 1.2rem;
 }
 
 .c-nav__link,
@@ -759,6 +760,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-right: 1rem;
   }
 
   .c-nav__link {
@@ -768,6 +770,9 @@ a:focus {
   .c-mobile-nav,
   .c-header__mobile-nav-trigger {
     display: none;
+  }
+  .c-header__logo {
+    display: block;
   }
 }
 
