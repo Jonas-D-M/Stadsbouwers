@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/screen.css" />
     <script src="script/app.js" async></script>
     <script src="script/lazysizes.min.js" async></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Stadsbouwers</title>
   </head>
   <body>
@@ -52,13 +53,19 @@
           <img class="c-intro__image lazyload" data-src="img/section.jpeg" alt="Mensen die verhuizen" />
         </div>
         <div class="c-intro o-layout__item u-1-of-2-bp4 o-row o-row--lg o-layout--justify-center">
-          <h1 class="c-intro__header1">Contact</h1>
-
-          <div class="c-intro__text u-mb-xl">
-            <p>
-              Hier komt de form voor het contact
-            </p>
-          </div>
+          <h1 class="c-intro__header-contact">Contact</h1>
+          <form action="./php/mail.php" method="post">
+            <input type="text" name="voornaam" id="voornaamID" placeholder="Voornaam" required class="textbox-300" />
+            <label for="voornaamID">Voornaam</label>
+            <input type="text" name="achternaam" id="achternaamID" placeholder="Achternaam" required class="textbox-300" />
+            <label for="achternaamID">Achternaam</label>
+            <input type="email" name="email" id="emailID" placeholder="E-mail" class="textbox-300" required class="textbox-300" />
+            <label for="emailID">E-mail</label>
+            <textarea name="opmerking" id="opmerkingID" cols="30" rows="10" placeholder="Opmerking: Type hier uw tekst..." required></textarea>
+            <label for="opmerkingID">Opmerking</label>
+            <div class="g-recaptcha" data-sitekey="6LcinOUUAAAAALbLDZN8vmHY1awY1w3cKFSh7S2j"></div>
+            <button class="o-button-reset c-button u-mb-md">Verstuur</button>
+          </form>
         </div>
       </div>
     </section>
@@ -86,12 +93,11 @@
       <div class="c-mobile-nav__bg"></div>
       <div class="c-mobile-nav__body">
         <div class="c-mobile-nav__header">
-          <button class="o-button-reset c-nav-trigger js-toggle-nav">
-            <button aria-label="Close-button" class="o-button-reset c-nav-trigger js-toggle-nav">
-              <svg class="c-nav-trigger__svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-                <path d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z" transform="translate(-5 -5)" fill="#000" />
-              </svg>
-            </button>
+          <button aria-label="Close-button" class="o-button-reset c-nav-trigger js-toggle-nav">
+            <svg class="c-nav-trigger__svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+              <path d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z" transform="translate(-5 -5)" fill="#000" />
+            </svg>
+          </button>
         </div>
         <div class="c-mobile-nav__nav c-mobile-nav__nav--main">
           <nav class="c-nav">
