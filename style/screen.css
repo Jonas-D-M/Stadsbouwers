@@ -427,6 +427,22 @@ a:focus {
   #COMPONENTS
 \*------------------------------------*/
 
+.c-nav__link,
+.c-nav__link:visited,
+.c-nav__link:active {
+  color: black;
+}
+
+.c-nav__link:hover,
+.c-nav__link:focus {
+}
+
+.is-selected .c-nav__link,
+.c-nav__link:hover,
+.c-nav__link:focus {
+  color: #5d5d5d;
+}
+
 /*
     Component: stadsbouwer
     ---
@@ -752,16 +768,6 @@ a:focus {
   display: block;
   padding: 8px 0;
   font-size: 1.2rem;
-}
-
-.c-nav__link,
-.c-nav__link:visited,
-.c-nav__link:active {
-  color: black;
-}
-
-.c-nav__link:hover,
-.c-nav__link:focus {
 }
 
 @media (min-width: 992px) {
