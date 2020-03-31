@@ -537,6 +537,16 @@ a:focus {
   line-height: 29px;
 }
 
+.c-intro {
+}
+
+@media (min-width: 1200px) {
+  .c-intro__image {
+    -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
 /*
     Component: info
     ---
@@ -705,6 +715,9 @@ a:focus {
   opacity: 1;
   pointer-events: auto;
 }
+
+
+
 
 .c-mobile-nav__body {
   position: relative;
