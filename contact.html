@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/screen.css" />
+    <script src="script/app.js"></script>
     <title>Stadsbouwers</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Navigatie ed -->
+    <header>
+      <div class="o-container u-max-width-none">
+        <div class="c-header">
+          <div class="c-header__nav">
+            <nav class="c-nav">
+              <ul class="o-list c-nav__list">
+                <li class="c-nav__item"><a href="index.html" class="c-nav__link">Startpagina</a></li>
+                <li class="c-nav__item"><a href="vastgoed.html" class="c-nav__link">Vastgoedontwikkeling</a></li>
+                <li class="c-nav__item"><a href="renovatie.html" class="c-nav__link">Renovatie & Nieuwbouw</a></li>
+                <li class="c-nav__item"><a href="investeren.html" class="c-nav__link">Impactinvesteren</a></li>
+                <li class="c-nav__item is-selected"><a href="#" class="c-nav__link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="c-header__logo">
+            <a href="index.html">
+              <img class="c-logo" src="img/Logo.png" alt="Stadsbouwers" />
+            </a>
+          </div>
+          <div class="c-header__mobile-nav-trigger">
+            <button class="o-button-reset c-nav-trigger js-toggle-nav">
+              <svg class="c-nav-trigger__svg" xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12">
+                <path d="M3,18H21V16H3Zm0-5H21V11H3ZM3,6V8H21V6Z" transform="translate(-3 -6)" fill="#000" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact form -->
+    <section class="o-row__intro">
+      <div class="o-layout o-layout--row-reverse">
+        <div class="o-layout__item u-1-of-2-bp4">
+          <img class="c-intro__image" src="img/section.jpeg" alt="Mensen die verhuizen" />
+        </div>
+        <div class="c-intro o-layout__item u-1-of-2-bp4 o-row o-row--lg o-layout--justify-center">
+          <h1 class="c-intro__header1">Contact</h1>
+
+          <div class="c-intro__text u-mb-xl">
+            <p>
+              Hier komt de form voor het contact
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer content -->
+    <footer class="o-row o-row--lg o-row__footer ">
+      <div class="o-layout o-layout--justify-space-evenly c-footer-container">
+        <div class="c-info o-layout__item u-1-of-2-bp1">
+          <h2 class="c-info__subheader">
+            StadsBouwers.be
+          </h2>
+          <p>Klein tekst bedrijf hier Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium tristique nisi, pulvinar blandit diam aliquam eget. Morbi ac mauris a</p>
+        </div>
+        <div class="c-info o-layout__item u-1-of-2-bp1">
+          <h2 class="c-info__subheader">
+            Onze locaties
+          </h2>
+          <p>Klein tekst bedrijf hier Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium tristique nisi, pulvinar blandit diam aliquam eget. Morbi ac mauris a</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- mobile nav, hier enkel dingen aan veranderen als je navigatie verandert (bv pagina verwijderen/toevoegen) -->
+    <aside class="c-mobile-nav">
+      <div class="c-mobile-nav__bg"></div>
+      <div class="c-mobile-nav__body">
+        <div class="c-mobile-nav__header">
+          <button class="o-button-reset c-nav-trigger js-toggle-nav">
+            <svg class="c-nav-trigger__svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+              <path d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z" transform="translate(-5 -5)" fill="#000" />
+            </svg>
+          </button>
+        </div>
+        <div class="c-mobile-nav__nav c-mobile-nav__nav--main">
+          <nav class="c-nav">
+            <ul class="o-list c-nav__list">
+              <li class="c-nav__item"><a href="index.html" class="c-nav__link">Startpagina</a></li>
+              <li class="c-nav__item"><a href="vastgoed.html" class="c-nav__link">Vastgoedontwikkeling</a></li>
+              <li class="c-nav__item"><a href="renovatie.html" class="c-nav__link">Renovatie & Nieuwbouw</a></li>
+              <li class="c-nav__item"><a href="investeren.html" class="c-nav__link">Impactinvesteren</a></li>
+              <li class="c-nav__item is-selected"><a href="#" class="c-nav__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+  </body>
 </html>

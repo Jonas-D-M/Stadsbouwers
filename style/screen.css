@@ -436,13 +436,14 @@ a:focus {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 .c-image-stadsbouwers {
-  /* -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%); */
+  width: 100%;
+  margin-bottom: 8px;
 }
 @media (min-width: 1200px) {
   .c-image-stadsbouwers {
     -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    margin-bottom: 0;
   }
 }
 
@@ -466,8 +467,15 @@ a:focus {
   /* text-align: center; */
 }
 .c-cta {
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
+}
+
+.c-lead-cta {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: -8px;
 }
 
 /*
@@ -566,8 +574,8 @@ a:focus {
 .c-nieuwsbrief__content {
   text-align: center;
 }
-.c-nieuwsbrief__input {
-  margin-bottom: 16px;
+.c-input {
+  margin-top: 16px;
 }
 .c-nieuwsbrief__header {
   text-align: center;
@@ -656,9 +664,6 @@ a:focus {
     align-items: center;
   }
 
-  .c-header__logo {
-  }
-
   .c-header__nav {
     position: relative;
     display: block;
@@ -669,8 +674,8 @@ a:focus {
 
 @media (min-width: 1200px) {
   .c-intro__image {
-    -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
   }
   .c-logo {
     height: 40px;
@@ -678,6 +683,10 @@ a:focus {
     margin-right: 64px;
     margin-left: 48px;
   }
+}
+
+.c-intro__image {
+  width: 100%;
 }
 
 /*
