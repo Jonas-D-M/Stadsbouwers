@@ -175,6 +175,7 @@ a:focus {
 }
 
 .o-row__intro {
+  height: 100%;
   background-color: #f8fbff;
 }
 
