@@ -14,6 +14,6 @@ const toggleNav = function() {
   }
 };
 
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', event => {
   toggleNav();
 });
