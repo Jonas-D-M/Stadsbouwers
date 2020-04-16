@@ -630,12 +630,15 @@ label {
 }
 
 .c-post__title {
+  font-family: 'Open Sans';
   text-align: left !important;
   font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .c-post__subtitle {
-  margin-top: 0.5rem;
+  font-family: 'Open Sans';
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   color: #5d5d5d;
@@ -643,7 +646,7 @@ label {
 }
 
 .c-post__paragraph {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .c-post__text {
 }
