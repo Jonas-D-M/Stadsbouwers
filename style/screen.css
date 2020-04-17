@@ -666,7 +666,7 @@ label {
 */
 
 .c-diensten-header {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
@@ -690,7 +690,6 @@ label {
 }
 
 .c-card__img {
-  max-height: 216px;
 }
 
 .c-card__title {
@@ -704,6 +703,10 @@ label {
   font-weight: 400;
   font-size: 1rem;
   text-align: center;
+}
+
+.c-card__content {
+  margin-top: 16px;
 }
 
 .c-card__text,
@@ -844,24 +847,8 @@ label {
   transition: opacity 0.25s;
 }
 
-/* @media (min-width: 992px) {
-  .c-logo {
-    position: relative;
-  }
-
-  .c-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .c-header__nav {
-    position: relative;
-    display: block;
-    z-index: 1;
-    width: 100%;
-  }
-} */
+@media (min-width: 992px) {
+}
 
 @media (min-width: 1200px) {
   .c-intro__image {
