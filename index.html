@@ -8,14 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <script src="script/app.js" async></script>
     <script src="script/lazysizes.min.js" async></script>
-
+    <script src="https://use.fontawesome.com/f1e25d35bd.js" async></script>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="style/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="style/screen.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans&display=swap" /></noscript>
-    <noscript><link rel="stylesheet" href="style/normalize.css" /></noscript>
-    <noscript><link rel="stylesheet" href="style/screen.css" /></noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans&display=swap" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/screen.css" />
     <title>Stadsbouwers</title>
   </head>
   <body>
@@ -26,8 +23,8 @@
           <div class="c-header__nav">
             <nav class="c-nav">
               <ul class="o-list c-nav__list">
-                <li class="c-nav__item"><a href="vastgoed.html" class="c-nav__link">Vastgoedontwikkeling</a></li>
-                <li class="c-nav__item"><a href="renovatie.html" class="c-nav__link">Renovatie & Nieuwbouw</a></li>
+                <li class="c-nav__item"><a href="optoppen.html" class="c-nav__link">Optoppen</a></li>
+                <li class="c-nav__item"><a href="nieuwbouw.html" class="c-nav__link">Nieuwbouw</a></li>
                 <li class="c-nav__item"><a href="investeren.html" class="c-nav__link">Impactinvesteren</a></li>
                 <li class="c-nav__item"><a href="contact.html" class="c-nav__link">Contact</a></li>
               </ul>
@@ -114,9 +111,6 @@
                 </p>
               </div>
             </div>
-            <div class="o-layout o-layout--justify-center">
-              <button onclick="window.location.href='/vastgoed.html'" class="o-layout__item o-button-reset c-button">Ontdek meer</button>
-            </div>
           </div>
           <div class="c-card o-layout__item u-1-of-3-bp4">
             <div class="c-card__img">
@@ -132,9 +126,6 @@
                   veranderingen sneller dan de levensduur van een gebouw. En dat heeft dan weer zijn effect op vastgoedontwikkeling.
                 </p>
               </div>
-            </div>
-            <div class="o-layout o-layout--justify-center">
-              <button class="o-layout__item o-button-reset c-button">Ontdek meer</button>
             </div>
           </div>
           <div class="c-card o-layout__item u-1-of-3-bp4">
@@ -152,9 +143,6 @@
                 </p>
               </div>
             </div>
-            <div class="o-layout o-layout--justify-center">
-              <button onclick="window.location.href='/renovatie.html'" class="o-layout__item o-button-reset c-button">Ontdek meer</button>
-            </div>
           </div>
         </div>
       </div>
@@ -162,30 +150,16 @@
 
     <!-- Zit er een stadsbouwer in jou? -->
     <section class="o-row o-row--lg">
-      <div class="o-container o-layout o-layout--align-center c-stadsbouwer">
-        <div class="o-layout__item u-2-of-3-bp4">
-          <img class="c-image-stadsbouwers lazyload" data-src="img/section2.jpeg" alt="building a wall" />
+      <div class="o-container o-layout o-layout--justify-center c-stadsbouwer">
+        <div class="u-1-of-2-bp4">
+          <img class="c-image-stadsbouwers lazyload" data-src="img/optoppen.jpeg" alt="building a wall" />
         </div>
-        <div class="o-layout__item u-1-of-3-bp4">
-          <div class="o-layout o-layout--justify-center">
-            <div class="c-textblock">
-              <h3 class="c-textblock__header">Zoek je</h3>
-              <p class="c-textblock_content">Een aannemer voor je bouw-of verbouwprojecten, of meer een betrouwbaar vakeman voor klusjes in jouw woning?</p>
-            </div>
-            <div class="c-textblock o-layout__item u-1-of-2-bp1">
-              <h3 class="c-textblock__header">Wil je</h3>
-              <p class="c-textblock_content">Een aannemer voor je bouw-of verbouwprojecten, of meer een betrouwbaar vakeman voor klusjes in jouw woning?</p>
-            </div>
-            <div class="c-textblock o-layout__item u-1-of-2-bp1">
-              <h3 class="c-textblock__header">Heb je</h3>
-              <p class="c-textblock_content">Een aannemer voor je bouw-of verbouwprojecten, of meer een betrouwbaar vakeman voor klusjes in jouw woning?</p>
-            </div>
-            <div class="c-textblock o-layout__item u-1-of-2-bp1">
-              <div class="c-cta">
-                <p class="c-lead-cta">Dan zit je goed bij ons!</p>
-                <button onclick="window.location.href='/contact.html'" class="o-layout__item o-button-reset c-button u-mb-md">StadsBouwer worden</button>
-              </div>
-            </div>
+        <div class="u-1-of-2-bp4">
+          <div class="c-diensten-header">
+            <h2>OPTOPPEN, IETS VOOR JOU?</h2>
+          </div>
+          <div class="c-cta">
+            <button onclick="window.location.href='/contact.html'" class="o-button-reset c-button u-mb-md">Doe de check-up!</button>
           </div>
         </div>
       </div>
@@ -196,15 +170,19 @@
       <div class="o-layout o-layout--justify-space-evenly c-footer-container">
         <div class="c-info o-layout__item u-1-of-2-bp1">
           <h2 class="c-info__subheader">
-            StadsBouwers.be
+            Flanders Sales Academy
           </h2>
-          <p>Klein tekst bedrijf hier Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium tristique nisi, pulvinar blandit diam aliquam eget. Morbi ac mauris a</p>
+          <p>
+            StadsBouwers zorgt voor je totale bouwverhaal, steeds vertrekkend van onze unieke specialisatie: staalskeletbouw. Zowel in optoppingen als in project- en woningbouw bouwden wij een
+            jarenlange ervaring en know-how op, dewelke wij graag inzetten voor jouw project.
+          </p>
         </div>
         <div class="c-info o-layout__item u-1-of-2-bp1">
           <h2 class="c-info__subheader">
-            Onze locaties
+            Neem contact op
           </h2>
-          <p>Klein tekst bedrijf hier Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium tristique nisi, pulvinar blandit diam aliquam eget. Morbi ac mauris a</p>
+          <p><i style="margin-right: 8px;" class="fa fa-phone" aria-hidden="true"></i>0412345678</p>
+          <p onclick="window.location.href='/contact.html'"><i style="margin-right: 8px;" class="fa fa-envelope" aria-hidden="true"></i>info@stadsbouwers.be</p>
         </div>
       </div>
     </footer>
@@ -223,8 +201,8 @@
         <div class="c-mobile-nav__nav c-mobile-nav__nav--main">
           <nav class="c-nav">
             <ul class="o-list c-nav__list">
-              <li class="c-nav__item"><a href="vastgoed.html" class="c-nav__link">Vastgoedontwikkeling</a></li>
-              <li class="c-nav__item"><a href="renovatie.html" class="c-nav__link">Renovatie & Nieuwbouw</a></li>
+              <li class="c-nav__item"><a href="optoppen.html" class="c-nav__link">Optoppen</a></li>
+              <li class="c-nav__item"><a href="nieuwbouw.html" class="c-nav__link">Nieuwbouw</a></li>
               <li class="c-nav__item"><a href="investeren.html" class="c-nav__link">Impactinvesteren</a></li>
               <li class="c-nav__item"><a href="contact.html" class="c-nav__link">Contact</a></li>
             </ul>

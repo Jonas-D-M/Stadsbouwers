@@ -179,8 +179,11 @@ a:focus {
   background-color: #f8fbff;
 }
 
-.o-row__impact {
-  background-image: url('../img/header1_img.jpeg');
+.o-row__optoppen,
+.o-row__impact,
+.o-row__nieuwbouw,
+.o-row__renovatie,
+.o-row__staalframebouw {
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -190,26 +193,27 @@ a:focus {
   height: 50vh;
 }
 
+.o-row__staalframebouw {
+  background-image: url('../img/staalframebouw.jpg');
+}
+
+.o-row__optoppen {
+  background-image: url('../img/optoppenHeader.jpg');
+}
+
+.o-row__nieuwbouw {
+  background-image: url('../img/Nieuwbouw.jpg');
+}
+
+.o-row__impact {
+  background-image: url('../img/header1_img.jpeg');
+}
 .o-row__vastgoed {
   background-image: url('../img/header1_img.jpeg');
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  /* Set a specific height */
-  height: 50vh;
 }
 
 .o-row__renovatie {
   background-image: url('../img/header1_img.jpeg');
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  /* Set a specific height */
-  height: 50vh;
 }
 
 .o-row__footer {
@@ -665,17 +669,26 @@ label {
     styling for cards
 */
 
+.c-optoppen {
+  display: flex;
+  flex-direction: column;
+}
+
 .c-diensten-header {
   /* text-decoration: underline; */
+  width: 100%;
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
+  margin-right: 8px;
+  margin-left: 8px;
+  justify-content: center;
 }
 
 .c-card {
   max-width: 400px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  padding: 0 0 16px;
+  padding: 0 0 32px;
   margin-bottom: 32px;
   margin-left: 8px;
   margin-right: 8px;
@@ -721,6 +734,7 @@ label {
     styling for intro
 */
 .c-intro__header1 {
+  text-align: center;
   font-size: 2rem;
   color: black;
   font-weight: 700;
@@ -746,6 +760,7 @@ label {
   color: white;
 }
 .c-info {
+  margin: 8px;
   max-width: 294px;
 }
 
