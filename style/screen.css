@@ -630,6 +630,11 @@ label {
   padding-right: 1rem;
 }
 
+.c-description {
+  text-align: center;
+  margin-left: 1rem;
+}
+
 .c-post__title {
   font-family: 'Open Sans';
   font-size: 2rem;
