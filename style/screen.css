@@ -184,7 +184,8 @@ a:focus {
 .o-row__nieuwbouw,
 .o-row__renovatie,
 .o-row__staalframebouw,
-.o-row__contact {
+.o-row__contact,
+.o-row__referenties {
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -192,6 +193,10 @@ a:focus {
   position: relative;
   /* Set a specific height */
   height: 50vh;
+}
+
+.o-row__referenties {
+  background-image: url('../img/referenties.jpeg');
 }
 
 .o-row__contact {
@@ -517,10 +522,6 @@ a:focus {
   color: black;
 }
 
-.c-nav__link:hover,
-.c-nav__link:focus {
-}
-
 .is-selected .c-nav__link,
 .c-nav__link:hover,
 .c-nav__link:focus {
@@ -559,13 +560,6 @@ textarea {
   padding-left: 8px;
   padding-top: 8px;
   border: 1px solid #cccccc;
-}
-
-input[type='text'],
-input[type='email'],
-input[type='number'],
-textarea {
-  /* border-radius: 5px; */
 }
 
 label {
@@ -610,9 +604,7 @@ label {
   font-size: 1.2rem;
   margin: 0;
 }
-.c-textblock__content {
-  /* text-align: center; */
-}
+
 .c-cta {
   max-width: 300px;
   margin-top: 16px;
@@ -660,12 +652,6 @@ label {
 
 .c-post__header {
   width: 100%;
-}
-.c-post__text {
-}
-
-.c-post__header,
-.c-post__body {
 }
 
 .c-post__image-container {
@@ -716,9 +702,6 @@ label {
 
 .c-card:last-child {
   margin-right: 0;
-}
-
-.c-card__img {
 }
 
 .c-card__title {
@@ -824,6 +807,11 @@ label {
   margin-top: 1rem;
 }
 
+.c-button-container {
+  display: flex;
+  justify-content: center;
+}
+
 .c-button:hover {
   cursor: pointer;
   background-color: #111111;
@@ -843,10 +831,6 @@ label {
 
 .c-header__nav {
   display: none;
-}
-
-.c-header__logo {
-  /* padding-left: 24px; */
 }
 
 .c-header__mobile-nav-trigger {
