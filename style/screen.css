@@ -183,7 +183,8 @@ a:focus {
 .o-row__impact,
 .o-row__nieuwbouw,
 .o-row__renovatie,
-.o-row__staalframebouw {
+.o-row__staalframebouw,
+.o-row__contact {
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
@@ -191,6 +192,10 @@ a:focus {
   position: relative;
   /* Set a specific height */
   height: 50vh;
+}
+
+.o-row__contact {
+  background-image: url('../img/contact.jpg');
 }
 
 .o-row__staalframebouw {
@@ -635,9 +640,9 @@ label {
 
 .c-post__title {
   font-family: 'Open Sans';
-  text-align: left !important;
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .c-post__subtitle {
@@ -652,6 +657,10 @@ label {
 .c-post__paragraph {
   margin-bottom: 1.5rem;
 }
+
+.c-post__header {
+  width: 100%;
+}
 .c-post__text {
 }
 
@@ -659,7 +668,14 @@ label {
 .c-post__body {
 }
 
+.c-post__image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .c-post__image {
+  margin: 1rem 0 1rem;
   padding: 0;
 }
 
