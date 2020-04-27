@@ -625,9 +625,7 @@ label {
 */
 
 .c-post {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem 0rem 1rem;
 }
 
 .c-description {
