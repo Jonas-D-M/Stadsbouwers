@@ -31,8 +31,9 @@ html {
   --titleColor: #020720;
   --footerText: #ffffff;
   --subtitleLight: #3972ac;
-  --dividerBackground: #f8fbff;
+  --dividerBackground: #f8f9ff;
 
+  --footerBackground: #1d2951;
   /* link colors */
   --linkColorHover: #3972ac;
 
@@ -243,7 +244,7 @@ a:focus {
 }
 
 .o-row__footer {
-  background-color: var(--primaryColor);
+  background-color: var(--titleColor);
 }
 
 /* size modifiers */
