@@ -12,7 +12,7 @@ html {
   font-size: 16px;
   line-height: 1.5;
   font-family: 'Lato', Helvetica, arial, sans-serif;
-  color: black;
+  color: var(--textColor);
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,6 +24,22 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  /* primary design colors */
+  --primaryColor: #05124b;
+  --textColor: #020720;
+  --titleColor: #020720;
+  --footerText: #ffffff;
+  --subtitleLight: #3972ac;
+  --dividerBackground: #f8fbff;
+
+  /* link colors */
+  --linkColorHover: #3972ac;
+
+  /* button hover */
+  --buttonColorHover: #184068;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -32,13 +48,13 @@ html {
  */
 
 ::-moz-selection {
-  background: #000;
+  background: var(--titleColor);
   color: white;
   text-shadow: none;
 }
 
 ::selection {
-  background: #000;
+  background: var(--titleColor);
   color: white;
   text-shadow: none;
 }
@@ -176,7 +192,7 @@ a:focus {
 
 .o-row__intro {
   height: 100%;
-  background-color: #f8fbff;
+  background-color: var(--dividerBackground);
 }
 
 .o-row__optoppen,
@@ -227,7 +243,7 @@ a:focus {
 }
 
 .o-row__footer {
-  background-color: black;
+  background-color: var(--primaryColor);
 }
 
 /* size modifiers */
@@ -519,13 +535,13 @@ a:focus {
 .c-nav__link,
 .c-nav__link:visited,
 .c-nav__link:active {
-  color: black;
+  color: var(--titleColor);
 }
 
 .is-selected .c-nav__link,
 .c-nav__link:hover,
 .c-nav__link:focus {
-  color: #5d5d5d;
+  color: var(--linkColorHover);
 }
 
 /*
@@ -573,6 +589,7 @@ label {
     ---
     styling for stadsbouwer
 */
+
 .c-stadsbouwer {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
@@ -593,6 +610,10 @@ label {
     ---
     styling for textblocks
 */
+
+.c-text {
+  width: 100%;
+}
 
 .c-textblock {
   max-width: 280px;
@@ -645,7 +666,7 @@ label {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
-  color: #5d5d5d;
+  color: var(--subtitleLight);
   font-weight: 400;
 }
 
@@ -691,6 +712,7 @@ label {
 }
 
 .c-card {
+  background-color: white;
   max-width: 400px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   padding: 0 0 32px;
@@ -735,10 +757,17 @@ label {
     ---
     styling for intro
 */
+
+.c-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .c-intro__header1 {
   text-align: center;
   font-size: 2rem;
-  color: black;
+  color: var(--textColor);
   font-weight: 700;
   line-height: 39px;
 }
@@ -749,6 +778,7 @@ label {
 }
 
 .c-intro__text {
+  max-width: 500px;
   size: 24px;
   line-height: 29px;
 }
@@ -803,7 +833,7 @@ label {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  background-color: #000000;
+  background-color: var(--primaryColor);
   color: white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   padding: 8px 16px;
@@ -817,8 +847,8 @@ label {
 
 .c-button:hover {
   cursor: pointer;
-  background-color: #111111;
-  transition: all 0.25 ease-in-out;
+  background-color: var(--buttonColorHover);
+  transition: all 0.25s ease-in-out;
 }
 
 /*
