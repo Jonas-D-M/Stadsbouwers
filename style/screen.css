@@ -11,7 +11,7 @@
 html {
   font-size: 16px;
   line-height: 1.5;
-  font-family: 'Lato', Helvetica, arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--textColor);
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -84,7 +84,7 @@ img {
 h1,
 h2,
 h3 {
-  font-family: 'Open Sans';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
@@ -670,14 +670,14 @@ label {
 }
 
 .c-post__title {
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
 .c-post__subtitle {
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
@@ -808,7 +808,7 @@ label {
 }
 .c-info {
   margin: 8px;
-  max-width: 294px;
+  max-width: 450px;
 }
 
 /*
