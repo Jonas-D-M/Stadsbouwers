@@ -683,6 +683,17 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.o-row__carousel {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .arrow_row {
+    justify-content: space-evenly;
+  }
 }
 
 .slick-dots li {
