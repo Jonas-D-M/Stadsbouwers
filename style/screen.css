@@ -683,7 +683,6 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .o-row__carousel {
@@ -691,8 +690,21 @@ label {
 }
 
 @media (min-width: 768px) {
-  .arrow_row {
-    justify-content: space-evenly;
+  .c-arrow-next {
+    display: block;
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+
+  .c-arrow-prev {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
