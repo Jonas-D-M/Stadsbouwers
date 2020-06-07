@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <script src="script/slideshow.js"></script>
     <script src="script/app.js" async></script>
     <script src="script/lazysizes.min.js" async></script>
     <script src="https://use.fontawesome.com/f1e25d35bd.js" async></script>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet" />
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet" /> -->
+    <!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet" /> -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Montserrat:wght@300;400;700&family=Roboto&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Montserrat:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/screen.css" />
+    <script src="script/slideshow.js" async></script>
     <title>Stadsbouwers</title>
   </head>
   <body>
@@ -63,7 +74,12 @@
             </div>
           </div>
           <div class="o-layout__item c-post__image-container u-1-of-2-bp3">
-            <img class="c-post__image lazyload" data-src="img/referenties/deinze1.jpeg" alt="Residentie Amelie" />
+            <img class="c-post__image lazyload js-carousel" data-src="img/referenties/deinze1.jpeg" alt="Residentie Amelie" />
+            <img class="c-post__image lazyload inactive js-carousel" data-src="img/referenties/deinze2.jpeg" alt="Residentie Amelie" />
+            <div class="arrow-container">
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+            </div>
           </div>
         </div>
 
@@ -83,6 +99,59 @@
           <div class="o-layout__item c-post__image-container u-1-of-2-bp3">
             <img class="c-post__image lazyload" data-src="img/referenties/centerparcs2.jpeg" alt="Centerparcs De Haan" />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="o-row o-row--xl o-row__diensten o-row__intro">
+      <div class="c-testimonial">
+        <h1 class="c-testimonial__header">
+          Residentie Amelie
+        </h1>
+        <div class="c-testimonial__body">
+          <p>
+            "De samenwerking verliep zeer vlot 10/10 would recommend again"
+          </p>
+        </div>
+      </div>
+      <div class="c-testimonial">
+        <h1 class="c-testimonial__header">
+          Bartje
+        </h1>
+        <div class="c-testimonial__body">
+          <p>
+            "De samenwerking verliep zeer vlot 10/10 would recommend again"
+          </p>
+        </div>
+      </div>
+      <div class="c-testimonial">
+        <h1 class="c-testimonial__header">
+          JEFKE
+        </h1>
+        <div class="c-testimonial__body">
+          <p>
+            "De samenwerking verliep zeer vlot 10/10 would recommend again"
+          </p>
+        </div>
+      </div>
+      <div class="c-testimonial">
+        <h1 class="c-testimonial__header">
+          Bartje
+        </h1>
+        <div class="c-testimonial__body">
+          <p>
+            "De samenwerking verliep zeer vlot 10/10 would recommend again"
+          </p>
+        </div>
+      </div>
+      <div class="c-testimonial">
+        <h1 class="c-testimonial__header">
+          Centerparcs De Haan
+        </h1>
+        <div class="c-testimonial__body">
+          <p>
+            "De samenwerking verliep zeer vlot 10/10 would recommend again"
+          </p>
         </div>
       </div>
     </section>
