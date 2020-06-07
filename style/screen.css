@@ -720,9 +720,9 @@ label {
   opacity: 0.25;
   color: black;
 }
-.slick-dots li button :active {
+.slick-dots li.slick-active button:before {
   color: var(--primaryColor);
-  opacity: 0.75;
+  opacity: 1;
 }
 .slick-dots {
   text-align: center;
