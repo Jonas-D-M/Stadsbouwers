@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
+    <!-- carousel -->
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!--  -->
     <meta charset="UTF-8" />
     <meta name="description" content="Meer dan alleen een aannemer of projectontwikkelaar!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <script src="script/slideshow.js"></script>
+    <!-- <script src="script/slideshow.js"></script> -->
     <script src="script/app.js" async></script>
     <script src="script/lazysizes.min.js" async></script>
     <script src="https://use.fontawesome.com/f1e25d35bd.js" async></script>
@@ -21,9 +25,10 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Montserrat:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet" />
+
+    <!-- <script src="script/slideshow.js" async></script> -->
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/screen.css" />
-    <script src="script/slideshow.js" async></script>
     <title>Stadsbouwers</title>
   </head>
   <body>
@@ -98,58 +103,109 @@
       </div>
     </section>
 
-    <section class="o-row o-row--xl o-row__diensten o-row__intro">
-      <div class="c-testimonial">
-        <h1 class="c-testimonial__header">
-          Residentie Amelie
-        </h1>
-        <div class="c-testimonial__body">
-          <p>
-            "De samenwerking verliep zeer vlot 10/10 would recommend again"
-          </p>
+    <section class="o-row o-row--xl o-row__diensten o-row__intro o-row__carousel">
+      <div class="c-carousel">
+        <div class="c-testimonial">
+          <h1 class="c-testimonial__header">
+            Residentie Amelie
+          </h1>
+          <div class="c-testimonial__body">
+            <p>
+              "De samenwerking verliep zeer vlot 10/10 would recommend again"
+            </p>
+          </div>
+        </div>
+        <div class="c-testimonial">
+          <h1 class="c-testimonial__header">
+            Bartje
+          </h1>
+          <div class="c-testimonial__body">
+            <p>
+              "De samenwerking verliep zeer vlot 10/10 would recommend again"
+            </p>
+          </div>
+        </div>
+        <div class="c-testimonial">
+          <h1 class="c-testimonial__header">
+            JEFKE
+          </h1>
+          <div class="c-testimonial__body">
+            <p>
+              "De samenwerking verliep zeer vlot 10/10 would recommend again"
+            </p>
+          </div>
+        </div>
+        <div class="c-testimonial">
+          <h1 class="c-testimonial__header">
+            Bartje
+          </h1>
+          <div class="c-testimonial__body">
+            <p>
+              "De samenwerking verliep zeer vlot 10/10 would recommend again"
+            </p>
+          </div>
+        </div>
+        <div class="c-testimonial">
+          <h1 class="c-testimonial__header">
+            Centerparcs De Haan
+          </h1>
+          <div class="c-testimonial__body">
+            <p>
+              "De samenwerking verliep zeer vlot 10/10 would recommend again"
+            </p>
+          </div>
         </div>
       </div>
-      <div class="c-testimonial">
-        <h1 class="c-testimonial__header">
-          Bartje
-        </h1>
-        <div class="c-testimonial__body">
-          <p>
-            "De samenwerking verliep zeer vlot 10/10 would recommend again"
-          </p>
+      <div class="arrow_row">
+        <div class="c-arrow-prev">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="angle-left"
+            class="svg-inline--fa fa-angle-left fa-w-8"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256 512"
+          >
+            <path
+              fill="currentColor"
+              d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+            ></path>
+          </svg>
         </div>
-      </div>
-      <div class="c-testimonial">
-        <h1 class="c-testimonial__header">
-          JEFKE
-        </h1>
-        <div class="c-testimonial__body">
-          <p>
-            "De samenwerking verliep zeer vlot 10/10 would recommend again"
-          </p>
-        </div>
-      </div>
-      <div class="c-testimonial">
-        <h1 class="c-testimonial__header">
-          Bartje
-        </h1>
-        <div class="c-testimonial__body">
-          <p>
-            "De samenwerking verliep zeer vlot 10/10 would recommend again"
-          </p>
-        </div>
-      </div>
-      <div class="c-testimonial">
-        <h1 class="c-testimonial__header">
-          Centerparcs De Haan
-        </h1>
-        <div class="c-testimonial__body">
-          <p>
-            "De samenwerking verliep zeer vlot 10/10 would recommend again"
-          </p>
+        <div class="c-arrow-next">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="angle-right"
+            class="svg-inline--fa fa-angle-right fa-w-8"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256 512"
+          >
+            <path
+              fill="currentColor"
+              d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+            ></path>
+          </svg>
         </div>
       </div>
     </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.c-carousel').slick({
+          dots: true,
+          infinite: true,
+          prevArrow: '.c-arrow-prev',
+          nextArrow: '.c-arrow-next',
+        });
+      });
+    </script>
 
     <footer class="o-row o-row--md o-row__footer">
       <div class="o-layout o-layout--justify-space-evenly c-footer-container">

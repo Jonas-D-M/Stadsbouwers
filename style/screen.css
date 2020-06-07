@@ -671,6 +671,63 @@ label {
   margin-bottom: -8px;
 }
 
+/* slick */
+.c-arrow-next,
+.c-arrow-prev {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.arrow_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button:before {
+  content: '•';
+  font-size: 22px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+}
+.slick-dots li button :active {
+  color: var(--primaryColor);
+  opacity: 0.75;
+}
+.slick-dots {
+  text-align: center;
+}
+
 /*
     Component: post
     ---
@@ -687,10 +744,13 @@ label {
 }
 
 .c-post__title {
-  /* font-family: 'Open Sans'; */
+  text-overflow: '';
+  white-space: initial;
   font-size: 2rem;
   margin-bottom: 1.5rem;
   text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .c-post__subtitle {
@@ -760,17 +820,17 @@ label {
 } */
 
 /* Position the "next button" to the right */
-.next {
+/* .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+/* .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
-.arrow-container {
+} */
+/* .arrow-container {
   width: 100%;
   position: absolute;
   display: flex;
@@ -779,7 +839,7 @@ label {
 
 .inactive {
   display: none;
-}
+} */
 
 /*
     Component: testimonial
