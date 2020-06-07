@@ -11,7 +11,7 @@ const hideElement = (element) => {
 const displayElement = (element) => {
   if (element instanceof HTMLElement) {
     element.style.transition = 'all 2s';
-    element.style.display = 'block';
+    element.style.display = 'flex';
   }
 };
 
