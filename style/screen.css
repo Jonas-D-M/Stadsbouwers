@@ -589,6 +589,11 @@ input.textbox-300 {
   padding-left: 8px;
 }
 
+input.textbox-300.fileInput {
+  padding-left: 0;
+  min-width: 25%;
+}
+
 input,
 textarea {
   color: #555 !important;
@@ -1023,6 +1028,11 @@ label {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   padding: 10px 20px;
   margin-top: 1rem;
+}
+
+.c-button.c-link-button {
+  text-decoration: none;
+  color: white;
 }
 
 .c-button-container {

@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/screen.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Stadsbouwers</title>
   </head>
   <body>
@@ -46,7 +47,7 @@
       </div>
     </header>
     <section class="o-row__contact"></section>
-
+    <!-- https://www.codexworld.com/php-contact-form-send-email-with-attachment-on-submit/ -->
     <section class="o-row o-row--md">
       <div class="c-post o-container">
         <div class="o-layout o-layout--justify-center">
@@ -65,6 +66,10 @@
                   <label for="emailID">E-mail</label>
                   <textarea name="opmerking" id="opmerkingID" cols="30" rows="10" placeholder="Opmerking: Type hier uw tekst..." required></textarea>
                   <label for="opmerkingID">Opmerking</label>
+                  <div class="u-max-width-xs">
+                    <input id="fileID" class="textbox-300 fileInput" type="file" />
+                    <label for="fileID">File Input</label>
+                  </div>
                   <div class="g-recaptcha" data-sitekey="6LcinOUUAAAAALbLDZN8vmHY1awY1w3cKFSh7S2j"></div>
 
                   <button class="o-button-reset c-button u-mb-md">Verstuur</button>
@@ -79,9 +84,6 @@
     <footer class="o-row o-row--md o-row__footer">
       <div class="o-layout o-layout--justify-space-evenly c-footer-container">
         <div class="c-info o-layout__item u-1-of-2-bp1">
-          <h2 class="c-info__subheader">
-            Flanders Sales Academy
-          </h2>
           <p>
             StadsBouwers zorgt voor je totale bouwverhaal, steeds vertrekkend van onze unieke specialisatie: staalskeletbouw. Zowel in optoppingen als in project- en woningbouw bouwden wij een
             jarenlange ervaring en know-how op, dewelke wij graag inzetten voor jouw project.
