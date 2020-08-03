@@ -913,6 +913,15 @@ label {
   justify-content: center;
 }
 
+.c-carousel-image {
+  width: 100%;
+}
+.c-carousel__image {
+  height: 480px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .c-card {
   background-color: white;
   max-width: 400px;

@@ -74,7 +74,10 @@
             </div>
           </div>
           <div class="o-layout__item c-post__image-container u-1-of-2-bp3">
-            <img class="c-post__image lazyload js-carousel" data-src="img/referenties/deinze1.jpeg" alt="Residentie Amelie" />
+            <div class="c-carousel-image">
+              <img src="img/referenties/deinze1.jpeg" class="c-carousel__image" alt="Residentie Amelie" />
+              <img src="img/referenties/deinze1.jpeg" class="c-carousel__image" alt="Residentie Amelie" />
+            </div>
           </div>
         </div>
 
@@ -92,14 +95,17 @@
             </div>
           </div>
           <div class="o-layout__item c-post__image-container u-1-of-2-bp3">
-            <img class="c-post__image lazyload" data-src="img/referenties/centerparcs2.jpeg" alt="Centerparcs De Haan" />
+            <div class="c-carousel-image">
+              <img src="img/referenties/centerparcs2.jpeg" class="c-carousel__image" alt="Centerparcs De Haan" />
+              <img src="img/referenties/centerparcs2.jpeg" class="c-carousel__image" alt="Centerparcs De Haan" />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="o-row o-row--xl o-row__diensten o-row__intro o-row__carousel">
-      <div class="c-carousel">
+      <div class="c-carousel-testimonial">
         <div class="c-testimonial">
           <h1 class="c-testimonial__header">
             Residentie Amelie
@@ -193,13 +199,26 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $('.c-carousel').slick({
+        $('.c-carousel-testimonial').slick({
           autoplay: true,
           autoplaySpeed: 2000,
           dots: true,
           infinite: true,
           prevArrow: '.c-arrow-prev',
           nextArrow: '.c-arrow-next',
+        });
+
+        $('.c-carousel-image').slick({
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          infinite: true,
+          variableWidth: true,
+          prevArrow: false,
+          nextArrow: false,
+          variableWidth: true,
+          centerMode: true,
+          mobileFirst: true,
         });
       });
     </script>
