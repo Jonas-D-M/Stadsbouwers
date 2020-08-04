@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /plans
+Disallow: /plans/*

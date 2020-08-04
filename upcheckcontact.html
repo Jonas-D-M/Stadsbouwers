@@ -57,7 +57,7 @@
           <div class="u-max-width-lg">
             <div class="o-layout__item">
               <div class="c-post__body">
-                <form action="./php/mail.php" method="post">
+                <form enctype="multipart/form-data" action="./php/fileUpload.php" method="post">
                   <input type="text" name="voornaam" id="voornaamID" placeholder="Voornaam" required class="textbox-300" />
                   <label for="voornaamID">Voornaam</label>
                   <input type="text" name="achternaam" id="achternaamID" placeholder="Achternaam" required class="textbox-300" />
@@ -67,8 +67,8 @@
                   <textarea name="opmerking" id="opmerkingID" cols="30" rows="10" placeholder="Opmerking: Type hier uw tekst..." required></textarea>
                   <label for="opmerkingID">Opmerking</label>
                   <div class="u-max-width-xs">
-                    <input id="fileID" class="textbox-300 fileInput" type="file" />
-                    <label for="fileID">File Input</label>
+                    <input id="fileID" name="fileToUpload" class="textbox-300 fileInput" type="file" />
+                    <label for="fileID" accept="application/pdf">File Input</label>
                   </div>
                   <div class="g-recaptcha" data-sitekey="6LcinOUUAAAAALbLDZN8vmHY1awY1w3cKFSh7S2j"></div>
 
