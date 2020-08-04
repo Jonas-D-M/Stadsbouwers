@@ -679,12 +679,14 @@ label {
 /* slick */
 .c-arrow-next,
 .c-arrow-prev {
+  /* position: absolute; */
   height: 16px;
   width: 16px;
   cursor: pointer;
 }
 
 .arrow_row {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -695,10 +697,19 @@ label {
 }
 
 @media (min-width: 768px) {
+  .c-testimonial__header {
+    font-size: 36px !important;
+  }
+  .c-testimonial__body {
+    font-size: 24px !important;
+  }
+  .c-post__title {
+    font-size: 1.75rem;
+  }
   .c-arrow-next {
     display: block;
     position: absolute;
-    right: 48px;
+    right: 50px !important;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1000;
@@ -713,6 +724,22 @@ label {
   }
 }
 
+.c-arrow-next {
+  display: block;
+  position: absolute;
+  right: 25px;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.c-arrow-prev {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  top: 45%;
+  transform: translateY(-50%);
+}
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -774,7 +801,7 @@ label {
 .c-post__title {
   text-overflow: '';
   white-space: initial;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   margin-bottom: 1.5rem;
   text-align: center;
   padding-left: 8px;
@@ -884,13 +911,15 @@ label {
 
 .c-testimonial__header {
   margin-bottom: 8px;
+  font-size: 1.5rem;
 }
 
 .c-testimonial__body {
-  font-size: 24px;
+  font-size: 1rem;
   font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
 }
+
 /*
     Component: card
     ---
